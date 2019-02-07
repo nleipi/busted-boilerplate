@@ -4,4 +4,4 @@ RUN luarocks install busted
 
 WORKDIR /app
 
-CMD ["busted", "-m", "/app/lua/?.lua", "-v", "specs"]
+ENV LUA_PATH="/app/lua/?.lua"
